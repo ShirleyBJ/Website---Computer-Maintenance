@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCDM - Clientèle - Clôturer un bon</title>
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+    <section class="container-title">
+        <div>
+            <h1 class="title"> PCDM </h1>
+        </div>
+    </section>
+    </header>
+    <main>
+        <section class="create-section">
+            <div>
+                <h2 class="title--style title--marge"><i class="fas fa-list-alt icon__style"></i>Clôturer un bon de maintenance</h2>
+            </div>
+        </section>
+        <section class="homepage">
+            <span><a href="index.html" class="link__homepage"><i class="fas fa-home icon__style--homepage"></i> Retour Accueil</a></span>
+            <span ><a href="Accueil Clientéle.html" class="link__homepage"><i class="far fa-arrow-alt-circle-left icon__style--homepage"></i> Précédent</a></span>
+        </section>
+        <div class="cloturer-bon">
+            <section class="block__form">
+                <form action="action.php" method="post">
+                    <h3 class="title__form">Information client</h3>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="code-client">Code client : </label>
+                            <input type="text" name="code-client" id="code-client" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="num-bon">Numéro de bon : </label>
+                            <input type="text" name="num-bon" id="num-bon" class="npt__style--spacing">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="civ">Civ*</label>
+                        <select name="civ" id="civ" class="npt__style--spacing">
+                            <option value="Mme">Mme.</option>
+                            <option value="Mme">Mr.</option>
+                        </select>
+                    </div>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="nom">Nom* :</label>
+                            <input type="text" name="nom" id="nom" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="prenom">Prénom* :</label>
+                            <input type="text" name="prenom" id="prenom" class="npt__style--spacing">
+                        </div>
+                    </div>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="mail">Email* :</label>
+                            <input type="text" name="mail" id="mail" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="fix">Télephone fixe :</label>
+                                <input type="text" name="fix" id="fix" class="npt__style--spacing">
+                            </div>
+                            <div>
+                                <label for="mobile">Mobile * :</label>
+                                <input type="text" name="mobile" id="mobile" class="npt__style--spacing">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="adresse">Adresse* :</label>
+                        <input type="text" name="adresse" id="adresse" class="npt__style--spacing">
+                    </div>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="CP">Code Postal* :</label>
+                            <input type="text" name="CP" id="CP" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="city">Ville de résidence* :</label>
+                            <input type="text" name="city" id="city" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="country">Pays* :</label>
+                            <input type="text" name="country" id="country" class="npt__style--spacing">
+                        </div>
+                    </div>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="date-creation">Date de création du bon* :</label>
+                            <input type="date" name="date-creation" id="date-creation" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="hour-creation">Heure de création du bon* :</label>
+                            <input type="time" name="hour-creation" id="hour-creation" class="npt__style--spacing">
+                        </div>
+                    </div>
+                    <div class="npt__style--align">
+                        <div>
+                            <label for="date-creation">Date de clôture du bon* :</label>
+                            <input type="date" name="date-creation" id="date-creation" class="npt__style--spacing">
+                        </div>
+                        <div>
+                            <label for="hour-creation">Heure de clôture du bon* :</label>
+                            <input type="time" name="hour-creation" id="hour-creation" class="npt__style--spacing">
+                        </div>
+                    </div>
+                    <h3 class="title__form">Moyen de paiement</h3>
+                    <div>
+                        <div class="npt__style--spacing">
+                            <label for="type-device" class="npt__style--block ">Moyen de paiement :</label>
+                            <select name="type-payment" id="type-payment" class="npt__style--spacing" >
+                                <option value="" selected disabled>Sélectionnez le moyen de paiement</option>
+                                <option value="">Carte bancaire</option>
+                                <option value="">Chèque</option>
+                                <option value="">Espéces</option>
+                            </select>
+                        </div>
+                            <div class="npt__style--spacing">
+                                <input type="checkbox" name="facture" id="facture" class="npt__style--spacing">   
+                                <label for="facture">Genérer une facture</label>
+                            </div>
+                        <div class="btn-submit__style--end">
+                            <div>
+                                <i class="far fa-check-square icon__submit-btn"></i><button type="submit" class="btn-submit__style">Facture acquitté / Clôturer le bon</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="container-footer">
+            <div class="contact">
+                <h2 class="h2-footer">Contact</h2>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Shirley Berchel</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Samuel Febrissy</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Alban Cardon</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Thomas Reuter</i>
+                <i class="fas fa-phone-alt"><span class="fa-icon-innter-text">&nbsp;06 66 62 89 42</i>
+                <i class="fas fa-map-marker"><span class="fa-icon-innter-text">&nbsp;Greta - Compiègne 60200</i></i>
+            </div>
+            <div class="contact">
+                <h2 class="h2-footer">Services</h2>
+                <ul class="ul-footer">
+                    <li onclick="window.location.href= 'clientele.html'">Clientèle</li>
+                    <li onclick="window.location.href= 'diagnostic.html'">Diagnostic</li>
+                    <li onclick="window.location.href= 'devis.html'">Devis</li>
+                    <li onclick="window.location.href= 'fournisseurs.html'">Fournisseurs</li>
+                </ul>
+            </div>
+        </section>
+        <span class="space"></span>
+        <center><hr class="hr"></center>
+        <section class="container-mentions">
+                <label class="mentions-item">©Copyright 2021-2022 PCDM - Maintenance Informatique</label>
+                <label class="mentions-item">Mentions légales | Plan du site </label>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

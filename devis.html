@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/devis.css">
+    <title>Page Devis</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="site-title">PCDM</h2>
+        <div class="logo-title">
+            <img src="assets/img/imgLogoMaintenance.png">
+            <h1>Devis</h1>
+        </div>
+    </header>
+    <br />
+    <br />
+    <div class="sec">
+        <h2 class="title-crea">Creation de Devis</h2>
+        <form>
+            <div class="civilite">
+                <div class="mr">
+                    <label for="Mr">Mr :</label>
+                    <input type="radio" id="Mr" name="Mr" value="Mr">
+                </div>
+                <div class="mme">
+                    <label for="Mme">Mme :</label>
+                    <input type="radio" id="Mme" name="Mme" value="Mme">
+                </div>
+            </div>
+            <br />
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+            <br />
+            <br />
+            <label for="pb">Probleme :</label>
+            <input type="text" name="pb" id="pb">
+            <br />
+            <br />
+            <p class="formP">Composants à changer :</p>
+            <br/>
+            <div class="composant">
+                <div class="component">
+                    <label for="nomcomp">Nom composant :</label>
+                    <input type="text" name="nomcomp" id="nomcomp">
+                </div>
+                <div class="price">
+                    <label for="price">Prix :</label>
+                    <input type="text" name="prix" id="prix"><span>€</span>
+                </div>
+            </div>
+            <br/>
+            <button name="add" id="add">Ajouter un composant</button>
+            <br/>
+            <br/>
+            <label for="total">Total :</label>
+            <input type="text" name="total" id="total"><span>€</span>
+            <br>
+            <br>
+            <input type="submit" id="creer" value="Creer le Devis">
+        </form>
+        <br/>
+    </div>
+    <br>
+    <br>
+    <div class="sec">
+        <h2 class="title">Liste des Devis :</h2>
+        <div class="devis">
+            <br>
+            <div class="nomDescr">
+                <div class="content1">Mme Lois Lane</div>
+                <div class="content2">Carte mère + Barre de ram</div>
+            </div>
+            <br>
+            <div class="prixModSup">
+                <br>
+                <div class="lePrix">
+                    <p class="prixdev">Prix :</p>
+                    <div class="content3">200 €</div>
+                </div>
+                <div class="buttons">
+                    <button id="mod">Modifier</button>
+                    <button id="suppr">Supprimer</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="devis">
+            <br>
+            <div class="nomDescr">
+                <div class="content1">Mr Jonah Jameson</div>
+                <div class="content2">Ecran + disque dur PC portable</div>
+            </div>
+            <br>
+            <div class="prixModSup">
+                <br>
+                <div class="lePrix">
+                    <p class="prixdev">Prix :</p>
+                    <div class="content3">103.50 €</div>
+                </div>
+                <div class="buttons">
+                    <button id="mod">Modifier</button>
+                    <button id="suppr">Supprimer</button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <footer>
+
+        <section class="container-footer">
+
+            <div class="contact">
+                <h2 class="h2-footer">Contact</h2>
+
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Shirley Berchel</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Samuel Febrissy</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Alban Cardon</i>
+                <i class="far fa-user-circle"><span class="fa-icon-innter-text">&nbsp;Thomas Reuter</i>
+
+                <i class="fas fa-phone-alt"><span class="fa-icon-innter-text">&nbsp;06 66 62 89 42</i>
+
+                <i class="fas fa-map-marker"><span class="fa-icon-innter-text">&nbsp;Greta - Compiègne 60200</i></i>
+            </div>
+
+            <div class="contact">
+                <h2 class="h2-footer">Services</h2>
+                <ul class="ul-footer">
+                    <li onclick="window.location.href= 'clientele.html'">Clientèle</li>
+                    <li onclick="window.location.href= 'diagnostic.html'">Diagnostic</li>
+                    <li onclick="window.location.href= 'index.html'">Accueil</li>
+                    <li onclick="window.location.href= 'fournisseurs.html'">Fournisseurs</li>
+                </ul>
+            </div>
+        </section>
+
+        <span class="space"></span>
+        <center><hr class="hr"></center>
+
+        <section class="container-mentions">
+                <p class="mentions-item">©Copyright 2021-2021 PCDM - Maintenance Informatique</p>
+                <p class="mentions-item">Mentions légales | Plan du site </p>
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+/*Reset CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "heavy";
+    src: url(../fonts/Mont-HeavyDEMO.otf);
+}
+
+
+.container-title{
+    background-color: white;
+    height: 5em;
+}
+
+.title{
+    color: #009CEF;
+    font-family: "heavy";
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.size-img{
+    width: 100%;
+}
+
+.container-bloc{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0px 150px 0px;
+}
+
+.bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background: rgba( 0, 145, 255, 0.70 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+    color: white;
+    height: 350px;
+    width: 350px;
+    cursor: pointer;
+    
+}
+
+.title-bloc{
+    font-family: "heavy";
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.desc-bloc{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "heavy";
+}
+
+.img-bloc{
+    padding-top: 15px;
+}
+
+footer{
+    /* margin-top: 200px; */
+    background-color: #090979;
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.space{
+    display: block;
+    height: 50px;
+}
+
+.hr{
+    opacity: 50%;
+    width: 20%;
+}
+
+.h2-footer{
+    font-family: "heavy";
+    font-size: 30px;
+}
+
+.ul-footer{
+    font-family: "heavy";
+    cursor: pointer;
+
+}
+
+.fa-icon-innter-text{
+    font-family: "heavy"
+}
+
+.container-mentions{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "heavy";
+    color: white;
+}
+
+.mentions-item{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*page fournisseur*/
+
+/*commun*/
+#main-pageFournisseur{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+#pageFournisseur_box-titre{
+    height: 2.5em;
+    width: 100%;
+    background: rgb(131,222,253);
+    background: linear-gradient(90deg, rgba(131,222,253,1) 0%, rgba(0,108,237,1) 100%);
+    text-align: center;
+    color: white;
+}
+#pageFournisseur_boxcentral{
+    display: flex;
+}
+.zonesaisie{
+    text-align: center;
+    width: 15em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.75);
+}
+.btn{
+    height: 2em;
+    width: 4em;
+}
+
+/*box commande*/
+.boxcentral_commande{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    min-height: 30em;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#boxcentral_new{
+    background: rgb(131,222,253);
+    background: linear-gradient(90deg, rgba(131,222,253,1) 0%, rgba(68,167,245,1) 100%);
+}
+#boxcentral_search{
+    align-items: center;
+    background: rgb(68,167,245);
+    background: linear-gradient(90deg, rgba(68,167,245,1) 0%, rgba(0,108,237,1) 100%);
+    color: white;
+}
+.box-titre_titre-box{
+    text-align: center;
+    color: white;
+    margin: 1.5em;
+}
+#commande_new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+}
+.new_boxlist{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1em;
+}
+.boxlist_list{
+    width: 15em;
+}
+.textarea{
+    width: 15em;
+    border-radius: 15px;
+}
+#new_tarif{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+#tarif_box-prix{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    background-color: white;
+    width: 5em;
+    height: 2em;
+}
+
+/*box recherché commande*/
+/*numero de commande */
+#search_box-search{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+#box-search_num-commande{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#numCommande{
+    margin-bottom: 1em;
+}
+/*detail commande*/
+#search_detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 1.5em 0;
+    padding: 1em;
+    min-height: 10em;
+    width: 80%;
+    background-color: #009CEF;
+    border: 1px solid black;
+}
+#search_suppression{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 1.5em 0;
+    padding: 1em;
+    min-height: 10em;
+    width: 90%;
+    background-color: #009CEF;
+    border: 1px solid black;
+}
+#numCommande{
+    text-align: center;
+    width: 15em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.75);
+}
+
+/*! Clientèle*/
+
+.accueil-clientèle{
+padding-bottom: 50px;
+}
+
+.home-section{
+    display: flex;
+    background-color:#009CEF;
+}
+
+.title--style{
+    color:white;
+    font-size: 50px;
+    padding : 0px 0px 15px 15px;
+    border-bottom: 2px solid white;
+}
+
+.home-section__left-part{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section__right-part{
+    width: 50%;
+    padding: 15px;
+}
+
+.img__style--responsive{
+    width: 70%;
+    height: auto;
+}
+
+.img__style--radius{
+    border-radius: 30px;
+}
+
+
+.menu__opt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.menu__opt-title{
+    font-size: 30px;
+    color: white;
+}
+
+.icon__style{
+    color: white;
+    font-size: 80px;
+    padding: 15px;
+}
+
+.icon__style--size{
+    padding-top:20px;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #009CEF;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.icon__style--homepage{
+    color:#090979;
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+}
+
+.link__homepage{
+    text-decoration: none;
+    color: #090979;
+}
+
+.link__homepage:hover{
+    text-decoration:underline;
+}
+
+/**Créer un bon de maintenance*/
+
+.link_style--no_underline{
+    text-decoration: none;
+}
+
+.create-section{
+    text-align: center;
+    background-color:#009CEF;
+    border-bottom: 5px solid white;
+    padding: 30px;
+}
+
+.title--marge{
+    margin: 0px 150px 0px 150px;
+}
+
+.creer-bon, .cloturer-bon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+}
+
+.block__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009CEF;
+}
+
+.title__form{
+    border: 2px solid;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.form__style--centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.npt__style--align{
+    display: flex;
+}
+
+.npt__style--centered{
+    align-self: center;
+}
+
+.npt__txt-area{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form{
+    padding: 10px;
+} 
+
+.btn-submit__style{
+    border: none;
+    border-bottom: 2.25px solid white;
+    padding-bottom: 5px;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon__submit-btn{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.btn-submit__style--end{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**Rechercher bons*/
+
+.rechercher-bon{
+    display: flex;
+    margin: 15px;
+}
+
+.filtered__section{
+    background-color:#009CEF;
+    width: 40%; 
+    padding: 10px;
+}
+
+.search__section{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    width: 100%;
+}
+
+.npt__style--block{
+    display: block;
+}
+
+.title__search{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-decoration:underline;
+    padding: 15px;
+}
+
+.npt__style--spacing{
+    margin: 20px;
+    padding: 2.5px;
+}
+
+.search--style{
+    text-align: center;
+    width: 80%;
+    background-color:#009CEF ;
+}
+
+.npt__search--style{
+    padding: 5px;
+    width: 80%;
+    border-radius: 15px;
+    outline: none;
+}
+
+.icon__search--style{
+    color: white;
+    font-size: 25px;
+    padding:0;
+}

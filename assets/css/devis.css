@@ -1,0 +1,248 @@
+@font-face{
+    font-family: "heavy";
+    src: url(../fonts/Mont-HeavyDEMO.otf);
+}
+ * {
+     font-family: heavy;
+     padding: 0%;
+     margin: 0%;
+ }
+
+ header {
+    margin: 0 5%;
+ }
+
+.site-title {
+    font-size: 48px;
+    color: #009CEF;
+}
+
+.logo-title {
+    padding: 10px;
+    text-align: center;
+    background-color: #009CEF;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 7px 8px gray;
+    color: white;
+}
+
+.break {
+    height: 5000px;
+}
+.sec {
+    margin: 0 5%;
+    font-size: 25px;
+    background-color: #009CEF;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 7px 8px gray;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.civilite {
+    display: flex;
+}
+
+label {
+    padding: 20px;
+    font-size: 25px;
+}
+
+input {
+    border-radius: 5px;
+    height: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#nom {
+    margin-left: 40em;
+    width: 48em;
+}
+
+#pb {
+    margin-left: 35.2em;
+    width: 48em;
+}
+
+form p {
+    margin-left: 20px;
+    color: white;
+}
+
+.composant {
+    display: flex;
+}
+
+.component input {
+    width:400px
+}
+
+.price input {
+    width:100px
+}
+
+.price {
+    margin-left: 16.3em;
+}
+
+button {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(80, 79, 79);
+}
+
+#total {
+    margin-left: 80em;
+    width:100px;
+}
+
+#creer {
+    margin:0 43%;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px 8px rgb(80, 79, 79);
+}
+
+.devis {
+    margin: 3%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nomDescr {
+    display: flex;
+}
+
+.content1 {
+    padding: 5px;
+    margin-left: 20px;
+    min-width: 300px;
+    font-size: 30px;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.content2 {
+    padding: 5px;
+    margin-left: 300px;
+    width: 572px;
+    font-size: 30px;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.prixModSup {
+    display: flex;
+}
+
+.prixdev {
+    margin-top: 6px;
+    margin-left: 20px;
+    color: black;;
+}
+
+
+.content3 {
+    padding: 5px;
+    margin-left: 20px;
+    width: 150px;
+    font-size: 30px;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.lePrix {
+    display: flex;
+}
+
+.buttons {
+    margin-left: 25em;
+}
+
+#mod {
+    color: white;
+    background-color:#009CEF ;
+}
+
+#suppr {
+    color: white;
+    background-color: red;
+}
+
+footer{
+    margin-top: 200px;
+    background-color: #090979;
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.space{
+    display: block;
+    height: 50px;
+}
+
+.hr{
+    opacity: 50%;
+    width: 20%;
+}
+
+.h2-footer{
+    font-family: "heavy";
+    font-size: 30px;
+}
+
+.ul-footer{
+    font-family: "heavy";
+    cursor: pointer;
+
+}
+
+.fa-icon-innter-text{
+    font-family: "heavy"
+}
+
+.container-mentions{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "heavy";
+    color: white;
+}
+
+.mentions-item{
+    padding-left: 50px;
+    padding-right: 50px;
+}
